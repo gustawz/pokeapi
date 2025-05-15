@@ -1,0 +1,31 @@
+/* assets/css/style.css */
+
+.sidebar {
+    transition: all 0.3s;
+}
+.sidebar.collapsed {
+    width: 70px;
+}
+.sidebar.collapsed .sidebar-text {
+    display: none;
+}
+.sidebar.collapsed .logo-text {
+    display: none;
+}
+.sidebar.collapsed .logo-icon {
+    margin-right: 0;
+}
+.content {
+    transition: all 0.3s;
+}
+.toast {
+    animation: fadeIn 0.3s, fadeOut 0.5s 2.5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
